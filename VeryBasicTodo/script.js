@@ -47,5 +47,9 @@ for(var i=0;i<list.length;i++){
 	addDeleteButton(list[i])
 }
 
+list.forEach(function(i){
+	i.addEventListener("click",toggleDone);
+	addDeleteButton(i)
+
 button.addEventListener("click", addListAfterClick);
 input.addEventListener("keypress", addListAfterKeypress);
